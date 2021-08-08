@@ -11434,7 +11434,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background:#f4b627;
+  background:black;
   transition: opacity 0.25s ease;
   text-align: center;
 }
