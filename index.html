@@ -215,11 +215,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN" form action="mail.php">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN" form action="mail.php" method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Nombre Completo</label>
+                            <label for="name">Nombre completo</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido</div>
                         </div>
                         <!-- Email address input-->
@@ -233,7 +233,7 @@
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                             <label for="phone">Teléfono</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">El teléfono es requerido</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
@@ -247,10 +247,7 @@
                         <!-- has successfully submitted-->
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                <div class="fw-bolder">Mensaje enviado con éxito</div>
                             </div>
                         </div>
                         <!-- Submit error message-->
