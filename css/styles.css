@@ -4453,11 +4453,11 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-color: white;
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
@@ -4492,7 +4492,7 @@ textarea.form-control-lg {
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
@@ -4512,7 +4512,8 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius:0 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 .card > hr {
   margin-right: 0;
@@ -11316,7 +11317,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: black;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11359,8 +11360,9 @@ hr.divider-light {
     padding-right: 0;
   }
   #mainNav.navbar-shrink {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: black;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    background-color: rgb(0 0 0 / 70%);
+    backdrop-filter: blur(2px);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -11395,7 +11397,7 @@ header.masthead h1, header.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 10rem;
     padding-bottom: 0;
   }
   header.masthead p {
@@ -11460,4 +11462,5 @@ header.masthead h1, header.masthead .h1 {
   font-weight: bold;
   /*text-shadow: 0px 12px 18px rgb(0 0 0 / 39%);*/
 }
+#beneficios i { font-size: 3rem; }
 /*background-image: url(assets/img/background-extintores.jpg);*/
